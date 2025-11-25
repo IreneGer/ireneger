@@ -12,20 +12,20 @@ interface HeaderProps {
 
 const Header = ({mounted, resolvedTheme, setTheme, scrolled}: HeaderProps): JSX.Element => {
   return (
-    <header className={`z-10 pt-10 pb-1 mb-10 top-0 right-0 left-0 transition border-b ${scrolled ? 'border-gray-400' : 'bg-transparent border-transparent'} sticky w-full backdrop-filter backdrop-blur-md`}>
-      <div className="max-w-4xl w-full flex items-center justify-between mx-auto px-4 sm:px-6 lg:px-8 pb-9">
+    <header className={`z-10 pt-6 pb-4 mb-10 top-0 right-0 left-0 transition border-b ${scrolled ? 'border-gray-400' : 'bg-transparent border-transparent'} sticky w-full backdrop-filter backdrop-blur-md`}>
+      <div className="max-w-4xl w-full flex items-center justify-between mx-auto px-4 sm:px-6 lg:px-8">
         <Link href="/">
-          <Image className="cursor-pointer transition-colors flex !p-1 rounded-md hover:bg-gray-300 text-lg dark:filter dark:invert" src="/favicon/favicon.svg" width={45} height={45} alt="favicon"/>
+          <Image className="cursor-pointer transition-colors flex !p-1 rounded-md hover:bg-gray-300 text-lg dark:filter dark:invert" src="/favicon/favicon.svg" width={35} height={35} alt="favicon"/>
         </Link>
-        <nav className="flex items-center justify-between gap-2 sm:gap-4">
+        <nav className="flex items-center gap-1 sm:gap-2 md:gap-4 text-sm">
           <NavLink title="About" href="/#about"/>
           <NavLink title="Research" href="/research"/>
           <NavLink title="Data" href="/projects"/>
           <NavLink title="Teaching" href="/teaching"/>
           <NavLink title="CV" href="/misc"/>
-          <button type="button" aria-label="Change theme" className="cursor-pointer hover:bg-gray-300 p-1 dark:hover:bg-gray-600 focus:outline-none focus:ring focus:border-blue-30 rounded-md" disabled={!mounted} onClick={() => { setTheme(resolvedTheme === 'light' ? 'dark' : 'light'); }}>
+          <button type="button" aria-label="Change theme" className="cursor-pointer hover:bg-gray-300 p-1 dark:hover:bg-gray-600 focus:outline-none focus:ring focus:border-blue-30 rounded-md ml-1 sm:ml-2" disabled={!mounted} onClick={() => { setTheme(resolvedTheme === 'light' ? 'dark' : 'light'); }}>
             <abbr title="Switch theme">
-              {resolvedTheme === 'light' ? (<Moon size={22} aria-label="Moon" />) : (<Sun size={22} aria-label="Sun" />)}
+              {resolvedTheme === 'light' ? (<Moon size={20} aria-label="Moon" />) : (<Sun size={20} aria-label="Sun" />)}
             </abbr>
           </button>
         </nav>
@@ -33,8 +33,5 @@ const Header = ({mounted, resolvedTheme, setTheme, scrolled}: HeaderProps): JSX.
     </header>
   );
 };
-
-
-
 
 export default Header;

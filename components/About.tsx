@@ -7,12 +7,15 @@ const About = (): JSX.Element => {
 
   return (
     <section className="grid gap-12" id="about">
-      <div className="flex justify-between">
-        <div className="mr-8 hidden md:block rounded-md">
+      <div className="flex flex-col md:flex-row md:justify-between items-center md:items-start">
+        {/* Profile image */}
+        <div className="mb-6 md:mb-0 md:mr-8 w-full max-w-[260px]">
           <ProfileImage />
         </div>
-        <div className="flex flex-col max-w-xl w-full justify-evenly">
-          <h1 className="text-4xl font-bold pb-8 md:pb-0">{personalInfo.name}</h1>
+
+        {/* Text content */}
+        <div className="flex flex-col max-w-xl w-full justify-evenly text-center md:text-left">
+          <h1 className="text-4xl font-bold pb-4 md:pb-0">{personalInfo.name}</h1>
 
           <p>
             PhD Candidate in{' '}
@@ -25,17 +28,15 @@ const About = (): JSX.Element => {
               ? <ExtLink href={about.college.link}>{about.college.name}</ExtLink>
               : about?.college?.name || ""
             }.
-            <br />
-            {/* {about?.email && <span className="text-sm">✉️ {about.email}</span>} */}
           </p>
 
           {about?.interest && (
-            <p className="text-sm text-gray-600">
+            <p className="text-sm text-gray-600 mt-2">
               Research Interests: {about.interest}
             </p>
           )}
 
-          <p className="text-sm text-gray-400">
+          <p className="text-sm text-gray-400 mt-2">
             Under construction...<br />
             Re-architecting this site with some modern web technologies.
           </p>

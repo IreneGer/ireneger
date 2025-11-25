@@ -21,3 +21,42 @@
         "interest": "Political Behaviour, Fiscal Policy, EU Politics, Text-as-Data"
     }
 }
+
+{
+    "title": "Irene Germani",
+    "name": "Irene Germani",
+    "domain": "https://irenegermani.com/",
+    "copyright": "",
+    "socialMedia": {
+        "GitHub": "https://github.com/IreneGer",
+        "LinkedIn": "https://www.linkedin.com/in/irene-germani-7b657917a/"
+    },
+    "about": {
+        "year": "",
+        "department": {
+            "name": "Department of Political Economy",
+            "link": ""
+        },
+        "college": {
+            "name": "King's College London",
+            "link": ""
+        },
+        "advisor": {
+            "name": "",
+            "link": ""
+        },
+        "email": "irene.germani@kcl.ac.uk",
+        "interest": "Political Behaviour, Fiscal Policy, EU Politics, Text-as-Data"
+    },
+    "love": "",
+    "education": [
+        {
+            "name": "",
+            "link": ""
+        },
+        {
+            "name": "",
+            "link": ""
+        }
+    ]
+}

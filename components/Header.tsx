@@ -18,7 +18,7 @@ const Header = ({mounted, resolvedTheme, setTheme, scrolled}: HeaderProps): JSX.
           <Image className="cursor-pointer transition-colors flex !p-1 rounded-md hover:bg-gray-300 text-lg dark:filter dark:invert" src="/favicon/favicon.svg" width={35} height={35} alt="favicon"/>
         </Link>
         <nav className="flex items-center gap-1 sm:gap-2 md:gap-4 text-sm">
-          <NavLink title="About" href="/#about"/>
+          <NavLink title="About" href="/"/>
           <NavLink title="Research" href="/research"/>
           <NavLink title="Data" href="/projects"/>
           <NavLink title="Teaching" href="/teaching"/>

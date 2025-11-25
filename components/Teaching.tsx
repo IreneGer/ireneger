@@ -6,9 +6,12 @@ const Teaching = (): JSX.Element | null => {
   return (
     <section className="grid gap-6" id="teaching">
       <h2 className="text-xl font-bold mt-12 mb-4">Teaching</h2>
-      <div className="space-y-6">
+      <div className="grid md:grid-cols-2 gap-6">
         {data.map((item, index) => (
-          <div key={index} className="border-b border-gray-200 pb-4 last:border-b-0">
+          <div
+            key={index}
+            className="p-4 border rounded-lg shadow-sm hover:shadow-md transition-shadow"
+          >
             <div className="flex justify-between items-center mb-2">
               <p className="font-medium text-lg">
                 {item.role} — {item.university}

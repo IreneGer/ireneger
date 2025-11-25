@@ -7,6 +7,7 @@ const About = (): JSX.Element => {
 
   return (
     <section className="grid gap-12" id="about">
+      {/* Flex container: vertical on mobile, horizontal on desktop */}
       <div className="flex flex-col md:flex-row md:justify-between items-center md:items-start">
         {/* Profile image */}
         <div className="mb-6 md:mb-0 md:mr-8 w-full max-w-[260px]">

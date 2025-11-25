@@ -13,7 +13,7 @@ export default class MyDocument extends Document {
 					<meta charSet="utf-8"/>
 					<meta name="apple-mobile-web-app-capable" content="no"/>
 					<link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png"/>
-					<link rel="manifest" href="/site.webmanifest"/>
+					{/* <link rel="manifest" href="/site.webmanifest"/> */}
 				</Head>
 				<body className="items-center justify-center bg-white dark:bg-black text-black dark:text-white font-sans text-lg">
 					<Main/>
